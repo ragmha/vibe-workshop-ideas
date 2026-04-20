@@ -3,564 +3,959 @@
     "id": "personal-portfolio",
     "title": "Personal Portfolio Site",
     "description": "Build a sleek personal portfolio website with an about section, project showcase, and contact form. Use CSS animations for smooth transitions.",
-    "vibePrompt": "Build me a modern personal portfolio website with dark mode, smooth scroll navigation, a hero section with my name, an animated project grid, and a contact form. Use HTML, CSS, and vanilla JS.",
+    "vibePrompt": "I want to build a personal portfolio website with dark mode, smooth scroll navigation, a hero section, an animated project grid, and a contact form using HTML, CSS, and vanilla JS. Start by creating a plan with the file structure, components, and design approach. Then implement it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["portfolio", "html", "css", "personal"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "portfolio",
+      "html",
+      "css",
+      "personal"
+    ],
     "source": "curated"
   },
   {
     "id": "weather-dashboard",
     "title": "Weather Dashboard",
     "description": "Create a weather dashboard that fetches real-time weather data from an API and displays forecasts with beautiful charts and icons.",
-    "vibePrompt": "Create a weather dashboard web app that uses the OpenWeatherMap API. Show current weather, 5-day forecast with icons, and a temperature chart. Include a city search bar. Make it responsive and colorful.",
+    "vibePrompt": "I want to build a weather dashboard web app that uses the OpenWeatherMap API. It should show current weather, a 5-day forecast with icons, and a temperature chart. Include a city search bar and make it responsive and colorful. Plan the component structure and API integration first, then build it out.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["weather", "api", "charts", "dashboard"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "weather",
+      "api",
+      "charts",
+      "dashboard"
+    ],
     "source": "curated"
   },
   {
     "id": "todo-cli",
     "title": "Terminal Todo App",
     "description": "Build a command-line todo list manager with add, complete, delete, and list features. Store data in a local JSON file.",
-    "vibePrompt": "Build a CLI todo app in Node.js. Commands: add, list, complete, delete. Store todos in a JSON file. Add colored output and a progress bar showing completion percentage.",
+    "vibePrompt": "I want to build a CLI todo app in Node.js with commands for add, list, complete, and delete. Todos should be stored in a JSON file, with colored output and a progress bar showing completion percentage. Plan the command structure and data model first, then implement everything.",
     "category": "cli",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["todo", "cli", "nodejs", "productivity"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI"
+    ],
+    "tags": [
+      "todo",
+      "cli",
+      "nodejs",
+      "productivity"
+    ],
     "source": "curated"
   },
   {
     "id": "markdown-previewer",
     "title": "Live Markdown Previewer",
     "description": "A split-pane editor where you type Markdown on the left and see rendered HTML on the right, updating in real time.",
-    "vibePrompt": "Build a live Markdown previewer with a split-pane layout. Left side is a textarea for Markdown input, right side shows the rendered HTML preview updating in real time. Add syntax highlighting and a copy HTML button.",
+    "vibePrompt": "I want to build a live Markdown previewer with a split-pane layout \u2014 a textarea for Markdown input on the left and rendered HTML preview on the right, updating in real time. Include syntax highlighting and a copy HTML button. Plan the layout and rendering approach, then implement it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["markdown", "editor", "preview", "realtime"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "markdown",
+      "editor",
+      "preview",
+      "realtime"
+    ],
     "source": "curated"
   },
   {
     "id": "rest-api-express",
     "title": "REST API with Express",
     "description": "Build a REST API for a bookstore with CRUD operations, input validation, and error handling using Express.js.",
-    "vibePrompt": "Create a REST API for a bookstore using Express.js and TypeScript. Include CRUD endpoints for books (title, author, ISBN, price). Add input validation, error handling middleware, and Swagger documentation.",
+    "vibePrompt": "I want to build a REST API for a bookstore using Express.js and TypeScript with CRUD endpoints for books (title, author, ISBN, price). It should include input validation, error handling middleware, and Swagger documentation. Plan the project structure, routes, and data model first, then implement the full API.",
     "category": "api",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["express", "rest", "api", "crud", "typescript"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "express",
+      "rest",
+      "api",
+      "crud",
+      "typescript"
+    ],
     "source": "curated"
   },
   {
     "id": "snake-game",
     "title": "Classic Snake Game",
     "description": "Recreate the classic Snake game in the browser using HTML Canvas. Add score tracking, speed increases, and game-over screen.",
-    "vibePrompt": "Build a Snake game using HTML Canvas and JavaScript. Include arrow key controls, score display, speed that increases as the snake grows, collision detection, and a game-over screen with restart button.",
+    "vibePrompt": "I want to build a classic Snake game using HTML Canvas and JavaScript with arrow key controls, score display, increasing speed as the snake grows, collision detection, and a game-over screen with a restart button. Plan the game loop, rendering, and state management approach first, then build it.",
     "category": "game",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["snake", "canvas", "game", "classic"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "snake",
+      "canvas",
+      "game",
+      "classic"
+    ],
     "source": "curated"
   },
   {
     "id": "pomodoro-timer",
     "title": "Pomodoro Timer",
     "description": "A productivity timer that alternates between 25-minute work sessions and 5-minute breaks with notifications and session tracking.",
-    "vibePrompt": "Build a Pomodoro timer web app. 25 min work / 5 min break cycles. Include start/pause/reset buttons, a circular progress animation, browser notifications when time's up, and a session counter.",
+    "vibePrompt": "I want to build a Pomodoro timer web app with 25-minute work and 5-minute break cycles. It should have start/pause/reset buttons, a circular progress animation, browser notifications when time is up, and a session counter. Plan the timer logic and UI components, then implement everything.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["pomodoro", "timer", "productivity", "focus"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "pomodoro",
+      "timer",
+      "productivity",
+      "focus"
+    ],
     "source": "curated"
   },
   {
     "id": "quiz-app",
     "title": "Interactive Quiz App",
     "description": "Build a trivia quiz app that fetches questions from an API, shows multiple-choice options, tracks score, and displays results.",
-    "vibePrompt": "Create an interactive quiz app using the Open Trivia Database API. Show one question at a time with multiple-choice answers, a progress bar, score tracking, and an animated results page at the end.",
+    "vibePrompt": "I want to build an interactive quiz app that fetches questions from the Open Trivia Database API. It should show one question at a time with multiple-choice answers, a progress bar, score tracking, and an animated results page at the end. Plan the quiz flow and state management, then build it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["quiz", "trivia", "api", "interactive"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "quiz",
+      "trivia",
+      "api",
+      "interactive"
+    ],
     "source": "curated"
   },
   {
     "id": "expense-tracker",
     "title": "Expense Tracker",
     "description": "A personal finance app to log expenses, categorize them, and visualize spending patterns with charts.",
-    "vibePrompt": "Build an expense tracker web app. Users can add expenses with amount, category, and date. Show a pie chart of spending by category and a bar chart of daily spending. Store data in localStorage. Include a monthly summary.",
+    "vibePrompt": "I want to build an expense tracker web app where users can add expenses with amount, category, and date. It should show a pie chart of spending by category, a bar chart of daily spending, store data in localStorage, and include a monthly summary. Plan the data model, chart components, and UI layout first, then implement it.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["finance", "charts", "tracking", "budgeting"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "finance",
+      "charts",
+      "tracking",
+      "budgeting"
+    ],
     "source": "curated"
   },
   {
     "id": "chat-bot",
     "title": "AI Chatbot Interface",
     "description": "Build a chat interface that connects to an AI API. Features include message history, typing indicators, and a slick UI.",
-    "vibePrompt": "Build a ChatGPT-style chat interface. Include a message input, chat bubbles for user/AI messages, a typing indicator animation, message timestamps, and a clear chat button. Style it with a dark theme. Connect to any AI API for responses.",
+    "vibePrompt": "I want to build a ChatGPT-style chat interface with message bubbles for user and AI messages, a typing indicator animation, message timestamps, a clear chat button, and a dark theme. It should connect to an AI API for responses. Plan the message handling architecture and UI components, then implement the full chat experience.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat", "Copilot SDK"],
-    "tags": ["chatbot", "ai", "chat", "interface"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Chat",
+      "Copilot SDK"
+    ],
+    "tags": [
+      "chatbot",
+      "ai",
+      "chat",
+      "interface"
+    ],
     "source": "curated"
   },
   {
     "id": "github-profile-viewer",
     "title": "GitHub Profile Viewer",
     "description": "An app that fetches a GitHub user's profile, repos, and contribution stats, displaying them in a beautiful dashboard.",
-    "vibePrompt": "Build a GitHub profile viewer that takes a username and displays their avatar, bio, follower count, top repositories sorted by stars, and language breakdown. Use the GitHub REST API. Make it look like a developer trading card.",
+    "vibePrompt": "I want to build a GitHub profile viewer that takes a username and displays their avatar, bio, follower count, top repositories sorted by stars, and a language breakdown \u2014 styled like a developer trading card. Plan the GitHub API integration and card layout, then build it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["github", "profile", "api", "dashboard"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "github",
+      "profile",
+      "api",
+      "dashboard"
+    ],
     "source": "curated"
   },
   {
     "id": "file-organizer-cli",
     "title": "File Organizer CLI",
     "description": "A CLI tool that scans a directory and automatically organizes files into folders based on their file type.",
-    "vibePrompt": "Build a CLI file organizer in Node.js. It scans a given directory and moves files into subfolders by type (Images, Documents, Videos, Code, etc.). Add a dry-run mode that shows what would be moved without actually moving anything. Include colored output.",
+    "vibePrompt": "I want to build a CLI file organizer in Node.js that scans a given directory and moves files into subfolders by type (Images, Documents, Videos, Code, etc.). Include a dry-run mode and colored output. Plan the file categorization rules and CLI interface, then implement it.",
     "category": "cli",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["files", "organizer", "automation", "cli"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI"
+    ],
+    "tags": [
+      "files",
+      "organizer",
+      "automation",
+      "cli"
+    ],
     "source": "curated"
   },
   {
     "id": "habit-tracker",
     "title": "Habit Tracker with Streaks",
     "description": "Track daily habits with a GitHub-style contribution heatmap showing streaks and completion rates.",
-    "vibePrompt": "Build a habit tracker web app. Users can add habits and check them off daily. Show a GitHub-style green contribution heatmap for each habit. Display current streak, longest streak, and completion rate. Store data in localStorage.",
+    "vibePrompt": "I want to build a habit tracker web app where users can add habits and check them off daily. It should display a GitHub-style green contribution heatmap for each habit, show current streak, longest streak, and completion rate, and store data in localStorage. Plan the data model, heatmap rendering, and UI layout, then build it.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["habits", "streaks", "heatmap", "tracking"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "habits",
+      "streaks",
+      "heatmap",
+      "tracking"
+    ],
     "source": "curated"
   },
   {
     "id": "ascii-art-generator",
     "title": "ASCII Art Generator",
     "description": "Convert images or text into ASCII art. Support different character sets and output sizes.",
-    "vibePrompt": "Build a web app that converts uploaded images into ASCII art. Let users choose the character density, output width, and whether to use color. Include a text-to-ASCII-art mode with big block letters. Add a copy and download button.",
+    "vibePrompt": "I want to build a web app that converts uploaded images into ASCII art. Users should be able to choose character density, output width, and whether to use color. Include a text-to-ASCII-art mode with big block letters and add copy and download buttons. Plan the image processing pipeline and character mapping algorithm, then implement it.",
     "category": "creative",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["ascii", "art", "image", "converter"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "ascii",
+      "art",
+      "image",
+      "converter"
+    ],
     "source": "curated"
   },
   {
     "id": "color-palette-generator",
     "title": "Color Palette Generator",
     "description": "Generate harmonious color palettes with copy-to-clipboard hex codes, palette locking, and export features.",
-    "vibePrompt": "Build a color palette generator like Coolors. Press spacebar to generate 5 random harmonious colors. Click a color to lock it. Show hex, RGB, and HSL values. Add a copy button for each color and an export palette as image feature.",
+    "vibePrompt": "I want to build a color palette generator like Coolors where pressing spacebar generates 5 random harmonious colors. Users can lock a color, see hex/RGB/HSL values, copy individual colors, and export the palette as an image. Plan the color harmony algorithm and UI interactions, then build it.",
     "category": "creative",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["colors", "design", "palette", "generator"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "colors",
+      "design",
+      "palette",
+      "generator"
+    ],
     "source": "curated"
   },
   {
     "id": "recipe-api",
     "title": "Recipe Search API",
     "description": "Build an API that lets users search for recipes by ingredients, cuisine, or dietary preferences.",
-    "vibePrompt": "Create a REST API for recipe search using Express.js. Seed it with 20 recipes. Support search by ingredients (comma-separated), filter by cuisine type and dietary restrictions (vegan, gluten-free). Include pagination and return results with cooking time and difficulty level.",
+    "vibePrompt": "I want to build a REST API for recipe search using Express.js, seeded with 20 recipes. It should support search by ingredients (comma-separated), filtering by cuisine type and dietary restrictions (vegan, gluten-free), and include pagination with cooking time and difficulty level in results. Plan the data schema, seed data, and API endpoints first, then implement the full API.",
     "category": "api",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["recipes", "search", "api", "food"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "recipes",
+      "search",
+      "api",
+      "food"
+    ],
     "source": "curated"
   },
   {
     "id": "memory-card-game",
     "title": "Memory Card Game",
     "description": "A card-matching memory game with flip animations, move counter, timer, and difficulty levels.",
-    "vibePrompt": "Build a memory card matching game. Cards flip with a 3D CSS animation. Include a move counter, timer, and 3 difficulty levels (4x3, 4x4, 6x4 grids). Use emoji as card faces. Add a victory screen with stats and a play-again button.",
+    "vibePrompt": "I want to build a memory card matching game with 3D CSS flip animations, a move counter, timer, and 3 difficulty levels (4x3, 4x4, 6x4 grids). Use emoji as card faces and include a victory screen with stats and a play-again button. Plan the game state management and animation approach, then build the complete game.",
     "category": "game",
     "difficulty": "beginner",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["memory", "cards", "matching", "game"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "memory",
+      "cards",
+      "matching",
+      "game"
+    ],
     "source": "curated"
   },
   {
     "id": "url-shortener",
     "title": "URL Shortener",
     "description": "Build a URL shortening service with custom slugs, click tracking, and an analytics dashboard.",
-    "vibePrompt": "Build a URL shortener with Express.js and SQLite. Users can shorten URLs with optional custom slugs. Track click count and last accessed time. Include a dashboard showing all shortened URLs with their stats. Add QR code generation for each short URL.",
+    "vibePrompt": "I want to build a URL shortener with Express.js and SQLite. Users can shorten URLs with optional custom slugs, and the app tracks click count and last accessed time. Include a dashboard showing all shortened URLs with stats and QR code generation for each short URL. Plan the database schema, API routes, and dashboard UI, then implement everything.",
     "category": "api",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["url", "shortener", "analytics", "qrcode"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "url",
+      "shortener",
+      "analytics",
+      "qrcode"
+    ],
     "source": "curated"
   },
   {
     "id": "generative-art",
     "title": "Generative Art Canvas",
     "description": "Create mesmerizing generative art using algorithms. Build interactive patterns with user controls for colors, shapes, and speed.",
-    "vibePrompt": "Build a generative art web app using HTML Canvas. Create flowing particle systems that respond to mouse movement. Add controls for particle count, color scheme, trail length, and speed. Include a save-as-PNG button.",
+    "vibePrompt": "I want to build a generative art web app using HTML Canvas with flowing particle systems that respond to mouse movement. Include controls for particle count, color scheme, trail length, and speed, plus a save-as-PNG button. Plan the particle physics system and rendering pipeline, then implement the full interactive experience.",
     "category": "creative",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["generative", "art", "canvas", "particles"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "generative",
+      "art",
+      "canvas",
+      "particles"
+    ],
     "source": "curated"
   },
   {
     "id": "type-racer",
     "title": "Typing Speed Test",
     "description": "A typing speed test app that measures WPM and accuracy, with different text difficulty levels.",
-    "vibePrompt": "Build a typing speed test like MonkeyType. Show a paragraph of text, highlight the current word, track words per minute and accuracy in real time. Include 15s/30s/60s modes, a results screen with a WPM chart, and a dark mode theme.",
+    "vibePrompt": "I want to build a typing speed test app like MonkeyType that shows a paragraph, highlights the current word, and tracks WPM and accuracy in real time. Include 15s/30s/60s modes, a results screen with a WPM chart, and a dark mode theme. Plan the text rendering, input tracking, and scoring system, then build it.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["typing", "speed", "wpm", "test"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "typing",
+      "speed",
+      "wpm",
+      "test"
+    ],
     "source": "curated"
   },
   {
     "id": "json-formatter",
     "title": "JSON Formatter & Validator",
     "description": "A tool that formats, validates, and visualizes JSON with syntax highlighting and tree view.",
-    "vibePrompt": "Build a JSON formatter and validator web app. Paste JSON on the left, see formatted output with syntax highlighting on the right. Add a tree view toggle, validation error messages with line numbers, minify/beautify buttons, and a dark code editor theme.",
+    "vibePrompt": "I want to build a JSON formatter and validator web app. Users paste JSON on the left and see formatted output with syntax highlighting on the right. Include a tree view toggle, validation error messages with line numbers, minify/beautify buttons, and a dark code editor theme. Plan the parser, formatter, and tree view components, then implement it.",
     "category": "devtools",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["json", "formatter", "validator", "devtools"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "json",
+      "formatter",
+      "validator",
+      "devtools"
+    ],
     "source": "curated"
   },
   {
     "id": "music-visualizer",
     "title": "Audio Music Visualizer",
     "description": "Build a music visualizer that reacts to audio input with colorful bars, waveforms, and particle effects.",
-    "vibePrompt": "Build a music visualizer using the Web Audio API and Canvas. Analyze audio from a file upload or microphone input. Show frequency bars, a waveform, and floating particles that react to the beat. Add controls for visualization style and color scheme.",
+    "vibePrompt": "I want to build a music visualizer using the Web Audio API and Canvas that analyzes audio from a file upload or microphone input. It should show frequency bars, a waveform, and floating particles that react to the beat, with controls for visualization style and color scheme. Plan the audio analysis pipeline and rendering system, then build the full visualizer.",
     "category": "creative",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["music", "visualizer", "audio", "canvas"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "music",
+      "visualizer",
+      "audio",
+      "canvas"
+    ],
     "source": "curated"
   },
   {
     "id": "real-time-polls",
     "title": "Real-Time Polling App",
     "description": "Create live polls where multiple users can vote and see results update in real time using WebSockets.",
-    "vibePrompt": "Build a real-time polling app. Users create polls with multiple options. Other users vote and see results animate in real time using WebSockets. Show results as animated bar charts with percentages. Include a shareable poll link.",
+    "vibePrompt": "I want to build a real-time polling app where users create polls with multiple options, others vote, and results animate in real time using WebSockets. Show results as animated bar charts with percentages and include shareable poll links. Plan the WebSocket architecture, server-side logic, and client UI, then implement the full stack.",
     "category": "web",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["polls", "realtime", "websockets", "voting"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "polls",
+      "realtime",
+      "websockets",
+      "voting"
+    ],
     "source": "curated"
   },
   {
     "id": "git-stats-cli",
     "title": "Git Stats CLI Tool",
     "description": "A CLI that analyzes a git repository and shows contribution stats, commit frequency, and code churn.",
-    "vibePrompt": "Build a CLI tool that analyzes a git repo and shows: top contributors, commits per day/week chart (using ASCII bars), most modified files, average commit size, and a code churn heatmap. Use colored terminal output and accept the repo path as an argument.",
+    "vibePrompt": "I want to build a CLI tool that analyzes a git repository and shows top contributors, commits per day/week as ASCII bar charts, most modified files, average commit size, and a code churn heatmap \u2014 all with colored terminal output. Plan the git data extraction and visualization approach, then implement the full CLI tool.",
     "category": "cli",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["git", "stats", "analytics", "cli"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI"
+    ],
+    "tags": [
+      "git",
+      "stats",
+      "analytics",
+      "cli"
+    ],
     "source": "curated"
   },
   {
     "id": "pixel-art-editor",
     "title": "Pixel Art Editor",
     "description": "A browser-based pixel art editor with drawing tools, color picker, layers, and export to PNG.",
-    "vibePrompt": "Build a pixel art editor in the browser. Include a configurable grid (8x8 to 64x64), color picker, pencil/eraser/fill tools, undo/redo, and export to PNG. Add a palette of 16 default colors and the ability to save/load projects to localStorage.",
+    "vibePrompt": "I want to build a browser-based pixel art editor with a configurable grid (8x8 to 64x64), color picker, pencil/eraser/fill tools, undo/redo, export to PNG, a palette of 16 default colors, and save/load to localStorage. Plan the canvas rendering, tool system, and project persistence, then build the complete editor.",
     "category": "creative",
     "difficulty": "intermediate",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["pixel", "art", "editor", "drawing"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "pixel",
+      "art",
+      "editor",
+      "drawing"
+    ],
     "source": "curated"
   },
   {
     "id": "task-board",
     "title": "Kanban Task Board",
     "description": "A drag-and-drop Kanban board with columns for todo, in progress, and done. Add, edit, and reorder tasks.",
-    "vibePrompt": "Build a Kanban task board with drag-and-drop. Three columns: Todo, In Progress, Done. Users can add cards with title and description, drag them between columns, and reorder within columns. Use smooth drag animations. Store state in localStorage.",
+    "vibePrompt": "I want to build a Kanban task board with drag-and-drop across three columns: Todo, In Progress, and Done. Users can add cards with title and description, drag them between columns, and reorder within columns with smooth animations. Store state in localStorage. Plan the drag-and-drop system and data model, then implement it.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["kanban", "tasks", "drag-and-drop", "productivity"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "kanban",
+      "tasks",
+      "drag-and-drop",
+      "productivity"
+    ],
     "source": "curated"
   },
   {
     "id": "api-health-monitor",
     "title": "API Health Monitor",
     "description": "A dashboard that periodically checks multiple API endpoints and displays their status, response time, and uptime.",
-    "vibePrompt": "Build an API health monitoring dashboard. Configure a list of API endpoints to monitor. Show status (up/down), response time, and uptime percentage for each. Auto-refresh every 30 seconds. Include a timeline graph showing response times over the last hour. Add email/webhook alert configuration.",
+    "vibePrompt": "I want to build an API health monitoring dashboard that checks multiple configured endpoints and shows status (up/down), response time, and uptime percentage. It should auto-refresh every 30 seconds, include a timeline graph of response times, and support email/webhook alert configuration. Plan the monitoring engine, data storage, and dashboard UI, then build the full system.",
     "category": "devtools",
     "difficulty": "intermediate",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["monitoring", "api", "health", "dashboard"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "monitoring",
+      "api",
+      "health",
+      "dashboard"
+    ],
     "source": "curated"
   },
   {
     "id": "image-filter-app",
     "title": "Instagram-Style Image Filters",
     "description": "Apply Instagram-style filters to images using Canvas. Include preset filters and custom adjustments.",
-    "vibePrompt": "Build an image filter app. Upload a photo and apply Instagram-style filters (grayscale, sepia, vintage, warm, cool, etc.). Add sliders for brightness, contrast, saturation, and blur. Show before/after comparison. Include a download button for the filtered image.",
+    "vibePrompt": "I want to build an image filter app where users upload a photo and apply Instagram-style filters (grayscale, sepia, vintage, warm, cool), with sliders for brightness, contrast, saturation, and blur. Include a before/after comparison and a download button. Plan the Canvas-based image processing pipeline and filter algorithms, then implement it.",
     "category": "creative",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["images", "filters", "canvas", "photo"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "images",
+      "filters",
+      "canvas",
+      "photo"
+    ],
     "source": "curated"
   },
   {
     "id": "text-adventure",
     "title": "Text Adventure Game Engine",
     "description": "Build an interactive text adventure game engine where players make choices that affect the story outcome.",
-    "vibePrompt": "Build a text adventure game engine in the browser. Define a story as JSON with rooms, items, and choices. Show narrative text with a typewriter effect, present choice buttons, track inventory, and support multiple endings. Create a short sample adventure to demo it.",
+    "vibePrompt": "I want to build a text adventure game engine in the browser. Stories are defined as JSON with rooms, items, and choices. The engine should display narrative text with a typewriter effect, present choice buttons, track inventory, and support multiple endings. Include a sample adventure to demo it. Plan the game engine architecture and story data format, then build everything.",
     "category": "game",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["text", "adventure", "game", "interactive"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "text",
+      "adventure",
+      "game",
+      "interactive"
+    ],
     "source": "curated"
   },
   {
     "id": "regex-tester",
     "title": "Regex Tester & Visualizer",
     "description": "A tool for testing regular expressions with live matching, group highlighting, and a visual explanation of the pattern.",
-    "vibePrompt": "Build a regex tester tool. Input field for the regex pattern and a textarea for test text. Highlight all matches in real time with different colors for capture groups. Show match details (index, groups). Add common regex pattern presets and a regex cheat sheet sidebar.",
+    "vibePrompt": "I want to build a regex tester tool with an input field for patterns and a textarea for test text. It should highlight all matches in real time with different colors for capture groups, show match details (index, groups), and include common regex presets and a cheat sheet sidebar. Plan the regex engine integration and highlight system, then implement the full tool.",
     "category": "devtools",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["regex", "testing", "devtools", "patterns"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "regex",
+      "testing",
+      "devtools",
+      "patterns"
+    ],
     "source": "curated"
   },
   {
     "id": "password-generator",
     "title": "Secure Password Generator",
     "description": "Generate strong passwords with configurable length, character types, and strength indicator.",
-    "vibePrompt": "Build a password generator web app. Configurable length (8-128), toggles for uppercase, lowercase, numbers, symbols. Show password strength meter with color indicator. Add one-click copy, bulk generate mode (generate 10 at once), and a passphrase mode that generates memorable word-based passwords.",
+    "vibePrompt": "I want to build a password generator web app with configurable length (8-128), toggles for uppercase/lowercase/numbers/symbols, a strength meter with color indicator, one-click copy, bulk generate mode (10 at once), and a passphrase mode for memorable word-based passwords. Plan the generation algorithms and UI layout, then build it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["password", "security", "generator", "utility"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "password",
+      "security",
+      "generator",
+      "utility"
+    ],
     "source": "curated"
   },
   {
     "id": "csv-analyzer",
     "title": "CSV Data Analyzer",
     "description": "Upload a CSV file and get instant statistics, charts, and data previews without any setup.",
-    "vibePrompt": "Build a CSV analyzer web app. Drag-and-drop a CSV file to upload. Show a data table preview, column statistics (min, max, mean, median for numbers), value frequency counts, and auto-generated charts (histogram for numbers, bar chart for categories). All processing in the browser, no server needed.",
+    "vibePrompt": "I want to build a CSV analyzer web app with drag-and-drop upload. It should show a data table preview, column statistics (min, max, mean, median for numbers), value frequency counts, and auto-generated charts (histograms for numbers, bar charts for categories) \u2014 all processed client-side. Plan the parsing engine, statistics calculations, and chart components, then implement it.",
     "category": "data",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["csv", "data", "analytics", "charts"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "csv",
+      "data",
+      "analytics",
+      "charts"
+    ],
     "source": "curated"
   },
   {
     "id": "npm-cli-scaffold",
     "title": "NPM Package Scaffolder",
     "description": "A CLI tool that scaffolds a new npm package with TypeScript, testing, linting, and CI/CD config.",
-    "vibePrompt": "Build an interactive CLI that scaffolds a new npm package. Ask for package name, description, and features (TypeScript, Jest tests, ESLint, GitHub Actions CI). Generate package.json, tsconfig, test setup, README with badges, .gitignore, and a sample source file. Use prompts with colored output.",
+    "vibePrompt": "I want to build an interactive CLI that scaffolds a new npm package. It should ask for package name, description, and features (TypeScript, Jest, ESLint, GitHub Actions CI), then generate package.json, tsconfig, test setup, README with badges, .gitignore, and a sample source file with colored output. Plan the template system and interactive prompt flow, then implement the full scaffolder.",
     "category": "cli",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["npm", "scaffold", "cli", "template"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI"
+    ],
+    "tags": [
+      "npm",
+      "scaffold",
+      "cli",
+      "template"
+    ],
     "source": "curated"
   },
   {
     "id": "tetris",
     "title": "Tetris Clone",
     "description": "Build a playable Tetris game with all standard pieces, rotation, line clearing, scoring, and levels.",
-    "vibePrompt": "Build a Tetris clone using HTML Canvas. Include all 7 tetromino shapes with proper rotation, ghost piece preview, next piece display, line clearing with animation, scoring system, level progression with speed increase, and game-over detection. Add keyboard controls and a high score saved to localStorage.",
+    "vibePrompt": "I want to build a Tetris clone using HTML Canvas with all 7 tetromino shapes, proper rotation, ghost piece preview, next piece display, line clearing with animation, scoring, level progression with speed increase, and game-over detection. Include keyboard controls and high score saved to localStorage. Plan the game engine, piece rotation system, and collision detection, then build the complete game.",
     "category": "game",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["tetris", "game", "canvas", "classic"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "tetris",
+      "game",
+      "canvas",
+      "classic"
+    ],
     "source": "curated"
   },
   {
     "id": "note-taking-app",
     "title": "Markdown Note-Taking App",
     "description": "A note-taking app with Markdown support, folder organization, search, and local storage.",
-    "vibePrompt": "Build a note-taking web app like a mini Notion. Features: create/edit/delete notes with Markdown support, organize notes into folders, full-text search, and auto-save to localStorage. Use a sidebar for navigation and a main content area with a Markdown editor that shows a live preview.",
+    "vibePrompt": "I want to build a note-taking web app like a mini Notion with Markdown support, folder organization, full-text search, and auto-save to localStorage. Use a sidebar for navigation and a main content area with a Markdown editor showing a live preview. Plan the data model, folder hierarchy, search indexing, and editor components, then implement everything.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["notes", "markdown", "productivity", "editor"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "notes",
+      "markdown",
+      "productivity",
+      "editor"
+    ],
     "source": "curated"
   },
   {
     "id": "api-mock-server",
     "title": "API Mock Server Generator",
     "description": "A tool that generates a mock API server from a JSON schema or OpenAPI spec for frontend development.",
-    "vibePrompt": "Build a CLI tool that takes a JSON file defining endpoints and generates a working Express mock server. Support GET/POST/PUT/DELETE, configurable response delays, random data generation using Faker.js patterns, and CORS enabled by default. Include a web UI to view and edit mock responses on the fly.",
+    "vibePrompt": "I want to build a CLI tool that takes a JSON file defining endpoints and generates a working Express mock server with GET/POST/PUT/DELETE support, configurable response delays, random data generation using Faker.js, and CORS enabled by default. Include a web UI to view and edit mock responses on the fly. Plan the endpoint parsing, mock data generation, and web UI architecture, then build it all.",
     "category": "devtools",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["mock", "api", "testing", "server"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "mock",
+      "api",
+      "testing",
+      "server"
+    ],
     "source": "curated"
   },
   {
     "id": "landing-page-generator",
     "title": "Landing Page Generator",
     "description": "An AI-powered tool that generates a complete landing page from a text description of the product.",
-    "vibePrompt": "Build a landing page generator. User enters a product name and description. Generate a complete responsive landing page with hero section, features grid, testimonials, pricing table, and call-to-action. Let users pick a color scheme. Show a live preview and include a download-as-HTML button.",
+    "vibePrompt": "I want to build a landing page generator where users enter a product name and description, and it generates a complete responsive landing page with hero section, features grid, testimonials, pricing table, and CTA. Users can pick a color scheme, see a live preview, and download as HTML. Plan the template engine, section components, and theming system, then implement the full generator.",
     "category": "web",
     "difficulty": "intermediate",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat", "Copilot SDK"],
-    "tags": ["landing", "generator", "ai", "template"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot SDK"
+    ],
+    "tags": [
+      "landing",
+      "generator",
+      "ai",
+      "template"
+    ],
     "source": "curated"
   },
   {
     "id": "platformer-game",
     "title": "2D Platformer Game",
     "description": "Build a simple 2D platformer with a character that can run, jump, and collect coins across levels.",
-    "vibePrompt": "Build a 2D platformer game using HTML Canvas. A character can run left/right and jump. Add platforms at different heights, collectible coins, a score display, and simple enemy AI that walks back and forth. Include 3 levels that get progressively harder. Add sound effects for jump and coin collection.",
+    "vibePrompt": "I want to build a 2D platformer game using HTML Canvas with a character that can run and jump across platforms, collectible coins, a score display, simple enemy AI, and 3 levels of increasing difficulty with sound effects. Plan the physics engine, level design system, sprite management, and collision detection, then build the complete game.",
     "category": "game",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["platformer", "2d", "game", "canvas"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "platformer",
+      "2d",
+      "game",
+      "canvas"
+    ],
     "source": "curated"
   },
   {
     "id": "data-pipeline-cli",
     "title": "Data Pipeline CLI",
-    "description": "A CLI tool that chains data transformations: read CSV → filter → transform → output JSON/chart.",
-    "vibePrompt": "Build a data pipeline CLI in Node.js. Read a CSV file, apply transformations via command flags: --filter 'column=value', --sort 'column', --select 'col1,col2', --groupby 'column'. Output as formatted table, JSON, or CSV. Add a --chart flag that generates an ASCII bar chart in the terminal.",
+    "description": "A CLI tool that chains data transformations: read CSV \u2192 filter \u2192 transform \u2192 output JSON/chart.",
+    "vibePrompt": "I want to build a data pipeline CLI in Node.js that reads CSV files and applies transformations via flags: --filter, --sort, --select, --groupby. It should output as a formatted table, JSON, or CSV, and include a --chart flag for ASCII bar charts in the terminal. Plan the transformation pipeline architecture and output formatters, then implement the full CLI.",
     "category": "data",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["data", "pipeline", "csv", "cli"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI"
+    ],
+    "tags": [
+      "data",
+      "pipeline",
+      "csv",
+      "cli"
+    ],
     "source": "curated"
   },
   {
     "id": "browser-extension",
     "title": "Tab Manager Browser Extension",
     "description": "A browser extension that groups, saves, and restores tab sessions for better tab management.",
-    "vibePrompt": "Build a Chrome browser extension for tab management. Features: view all open tabs in a popup, group tabs by domain, save tab sessions with a name, restore saved sessions, close duplicate tabs, and search across all tabs. Use a clean popup UI with icons.",
+    "vibePrompt": "I want to build a Chrome browser extension for tab management with features to view all open tabs in a popup, group tabs by domain, save and restore tab sessions by name, close duplicate tabs, and search across all tabs with a clean popup UI. Plan the Chrome extension architecture, manifest, and storage strategy, then build the complete extension.",
     "category": "devtools",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["extension", "browser", "tabs", "productivity"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "extension",
+      "browser",
+      "tabs",
+      "productivity"
+    ],
     "source": "curated"
   },
   {
     "id": "countdown-event",
     "title": "Event Countdown Timer",
     "description": "A beautiful countdown timer to a future event with animated flipping number cards.",
-    "vibePrompt": "Build an event countdown timer web app. User enters an event name and date. Show a beautiful countdown with flipping number cards (days, hours, minutes, seconds). Add confetti animation when the countdown reaches zero. Support multiple events and share countdown links.",
+    "vibePrompt": "I want to build an event countdown timer web app where users enter an event name and date, and see a beautiful countdown with flipping number cards (days, hours, minutes, seconds). Include confetti animation at zero, support for multiple events, and shareable countdown links. Plan the flip animation system and event management, then implement it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["countdown", "timer", "events", "animation"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "countdown",
+      "timer",
+      "events",
+      "animation"
+    ],
     "source": "curated"
   },
   {
     "id": "graphql-api",
     "title": "GraphQL API for Movies",
     "description": "Build a GraphQL API for a movie database with queries, mutations, and relationships between movies, actors, and directors.",
-    "vibePrompt": "Build a GraphQL API for a movie database using Apollo Server. Define types for Movie, Actor, and Director with relationships. Include queries for listing/searching movies, and mutations for adding reviews. Seed with 10 movies. Add filtering by genre and year.",
+    "vibePrompt": "I want to build a GraphQL API for a movie database using Apollo Server with types for Movie, Actor, and Director including relationships, queries for listing and searching movies, mutations for adding reviews, seed data for 10 movies, and filtering by genre and year. Plan the schema design, resolvers, and data layer, then implement the full API.",
     "category": "api",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["graphql", "api", "movies", "apollo"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "graphql",
+      "api",
+      "movies",
+      "apollo"
+    ],
     "source": "curated"
   },
   {
     "id": "code-screenshot",
     "title": "Code Screenshot Tool",
     "description": "A tool that turns code snippets into beautiful, shareable images with syntax highlighting and themes.",
-    "vibePrompt": "Build a code-to-image tool like Carbon. Paste code into an editor with syntax highlighting. Choose from themes (dracula, monokai, github, etc.), set background color/gradient, window chrome style, font size, and padding. Export as PNG. Support 10+ programming languages.",
+    "vibePrompt": "I want to build a code-to-image tool like Carbon where users paste code with syntax highlighting and choose from themes (dracula, monokai, github, etc.), background color/gradient, window chrome style, font size, and padding, then export as PNG. Support 10+ programming languages. Plan the rendering pipeline, theme system, and export functionality, then build it.",
     "category": "devtools",
     "difficulty": "intermediate",
     "duration": "1hr",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["code", "screenshot", "sharing", "syntax"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "code",
+      "screenshot",
+      "sharing",
+      "syntax"
+    ],
     "source": "curated"
   },
   {
     "id": "fitness-tracker-mobile",
     "title": "Fitness Workout Logger",
     "description": "A mobile-friendly web app to log workouts, track progress, and visualize exercise stats over time.",
-    "vibePrompt": "Build a mobile-first fitness workout logger. Users can create workout templates (exercises, sets, reps, weight), log completed workouts, and view progress charts for each exercise over time. Include a timer for rest periods between sets. Store data in localStorage. Use a bottom navigation bar.",
+    "vibePrompt": "I want to build a mobile-first fitness workout logger where users can create workout templates (exercises, sets, reps, weight), log completed workouts, view progress charts over time, and use a rest period timer between sets. Store data in localStorage and use a bottom navigation bar. Plan the data model, workout flow, and chart components, then implement the full app.",
     "category": "mobile",
     "difficulty": "intermediate",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["fitness", "workout", "tracker", "mobile"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "fitness",
+      "workout",
+      "tracker",
+      "mobile"
+    ],
     "source": "curated"
   },
   {
     "id": "emoji-search",
     "title": "Emoji Search Engine",
     "description": "A fast emoji search tool with keyword search, categories, skin tone modifiers, and one-click copy.",
-    "vibePrompt": "Build an emoji search engine. Load all Unicode emojis with metadata. Add instant search by keyword, category filters, skin tone selector, recently used section, and one-click copy to clipboard. Show emoji name and Unicode on hover. Make it feel snappy with virtual scrolling for the emoji grid.",
+    "vibePrompt": "I want to build a fast emoji search engine that loads all Unicode emojis with metadata. Include instant keyword search, category filters, a skin tone selector, a recently used section, and one-click copy to clipboard with emoji name and Unicode shown on hover. Plan the emoji data loading, search indexing, and virtual scrolling for performance, then build it.",
     "category": "web",
     "difficulty": "beginner",
     "duration": "30min",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["emoji", "search", "unicode", "utility"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "emoji",
+      "search",
+      "unicode",
+      "utility"
+    ],
     "source": "curated"
   },
   {
     "id": "cli-dashboard",
     "title": "Terminal Dashboard",
     "description": "A real-time terminal dashboard showing system stats like CPU, memory, disk, and network usage.",
-    "vibePrompt": "Build a terminal dashboard using blessed or ink (React for CLI). Show real-time boxes for: CPU usage bar, memory usage pie chart, disk space, network throughput, top processes, and system uptime. Auto-refresh every second. Use colors and Unicode box-drawing characters.",
+    "vibePrompt": "I want to build a real-time terminal dashboard using blessed or ink (React for CLI) that shows CPU usage bar, memory usage pie chart, disk space, network throughput, top processes, and system uptime \u2014 auto-refreshing every second with colors and Unicode box-drawing characters. Plan the data collection layer, widget layout system, and refresh cycle, then implement the full dashboard.",
     "category": "cli",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["dashboard", "terminal", "system", "monitoring"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot CLI"
+    ],
+    "tags": [
+      "dashboard",
+      "terminal",
+      "system",
+      "monitoring"
+    ],
     "source": "curated"
   },
   {
     "id": "drawing-canvas",
     "title": "Collaborative Drawing Canvas",
     "description": "A real-time collaborative drawing app where multiple users can draw on the same canvas simultaneously.",
-    "vibePrompt": "Build a collaborative drawing canvas. Multiple users can draw on the same canvas in real time using WebSockets. Include tools: pencil, eraser, shapes (rectangle, circle), color picker, line thickness slider. Show cursors of other users with their names. Add an undo button and clear canvas option.",
+    "vibePrompt": "I want to build a collaborative drawing canvas where multiple users can draw on the same canvas in real time using WebSockets. Include tools for pencil, eraser, shapes (rectangle, circle), color picker, line thickness slider, show other users' cursors with names, and add undo and clear canvas options. Plan the WebSocket sync protocol, drawing engine, and tool system, then build the full collaborative app.",
     "category": "creative",
     "difficulty": "advanced",
     "duration": "2hr+",
-    "tools": ["GitHub Copilot", "Copilot Chat"],
-    "tags": ["drawing", "collaborative", "canvas", "realtime"],
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "drawing",
+      "collaborative",
+      "canvas",
+      "realtime"
+    ],
     "source": "curated"
   }
 ]

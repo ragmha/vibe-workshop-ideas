@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vibe Workshop Ideas — AI-Powered Workshop Idea Generator",
   description:
-    "Discover and generate project ideas for vibe coding workshops. Built with the GitHub Copilot SDK.",
+    "Discover and generate project ideas for vibe coding workshops with GitHub Copilot. Plan → Agent → Autopilot.",
 };
 
 export default function RootLayout({

@@ -13,12 +13,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/github/copilot-sdk"
+            href="https://awesome-copilot.github.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted hover:text-foreground transition-colors hidden sm:block"
           >
-            Copilot SDK
+            Awesome Copilot
           </a>
           <ThemeToggle />
         </div>

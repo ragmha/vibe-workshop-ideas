@@ -17,7 +17,6 @@ function shuffleArray<T>(arr: T[]): T[] {
   return shuffled;
 }
 
-// Web Audio sound effects
 let audioCtx: AudioContext | null = null;
 
 function ensureAudio() {
@@ -39,8 +38,7 @@ function playTick(progress: number) {
   osc.type = "triangle";
   osc.frequency.setValueAtTime(freq, now);
   osc.frequency.exponentialRampToValueAtTime(freq * 0.6, now + 0.04);
-  const vol = 0.08 + (1 - progress) * 0.06;
-  gain.gain.setValueAtTime(vol, now);
+  gain.gain.setValueAtTime(0.08 + (1 - progress) * 0.06, now);
   gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
   osc.connect(gain).connect(ctx.destination);
   osc.start(now);
@@ -54,10 +52,10 @@ function playLand() {
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
     osc.type = "sine";
-    const delay = i * 0.06;
-    osc.frequency.setValueAtTime(freq, now + delay);
+    const d = i * 0.06;
+    osc.frequency.setValueAtTime(freq, now + d);
     gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(0.12 - i * 0.03, now + delay);
+    gain.gain.linearRampToValueAtTime(0.12 - i * 0.03, now + d);
     gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
     osc.connect(gain).connect(ctx.destination);
     osc.start(now);
@@ -68,43 +66,43 @@ function playLand() {
 function playClunk() {
   const ctx = ensureAudio();
   const now = ctx.currentTime;
-  const bufferSize = ctx.sampleRate * 0.05;
-  const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-  const data = buffer.getChannelData(0);
-  for (let i = 0; i < bufferSize; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
-  const noise = ctx.createBufferSource();
-  noise.buffer = buffer;
-  const filter = ctx.createBiquadFilter();
-  filter.type = "lowpass";
-  filter.frequency.setValueAtTime(600, now);
-  const gain = ctx.createGain();
-  gain.gain.setValueAtTime(0.15, now);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
-  noise.connect(filter).connect(gain).connect(ctx.destination);
-  noise.start(now);
-  noise.stop(now + 0.06);
+  const buf = ctx.createBuffer(1, ctx.sampleRate * 0.05, ctx.sampleRate);
+  const d = buf.getChannelData(0);
+  for (let i = 0; i < d.length; i++)
+    d[i] = (Math.random() * 2 - 1) * (1 - i / d.length);
+  const src = ctx.createBufferSource();
+  src.buffer = buf;
+  const flt = ctx.createBiquadFilter();
+  flt.type = "lowpass";
+  flt.frequency.setValueAtTime(600, now);
+  const g = ctx.createGain();
+  g.gain.setValueAtTime(0.15, now);
+  g.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+  src.connect(flt).connect(g).connect(ctx.destination);
+  src.start(now);
+  src.stop(now + 0.06);
 }
 
 const ITEM_HEIGHT = 80;
 const FRICTION = 0.985;
 const STOP_THRESHOLD = 1.5;
+const LEVER_TRAVEL = 110;
 
 export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
   const reelRef = useRef<HTMLDivElement>(null);
   const windowRef = useRef<HTMLDivElement>(null);
-  const armRef = useRef<HTMLDivElement>(null);
+  const leverRef = useRef<HTMLDivElement>(null);
   const animRef = useRef<number>(0);
   const spinningRef = useRef(false);
   const lastIndexRef = useRef(-1);
   const [isSpinning, setIsSpinning] = useState(false);
   const [hasSpun, setHasSpun] = useState(false);
 
-  // Initialize reel with a few shuffled titles
   useEffect(() => {
     if (!reelRef.current || !windowRef.current) return;
     const strip = reelRef.current;
     const winH = windowRef.current.offsetHeight;
-    const items = shuffleArray(ideas).slice(0, 3);
+    const items = shuffleArray(ideas).slice(0, 5);
     strip.innerHTML = "";
     items.forEach((idea) => {
       const div = document.createElement("div");
@@ -112,12 +110,12 @@ export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
       div.textContent = idea.title;
       strip.appendChild(div);
     });
-    const midIdx = 1;
+    const midIdx = 2;
     const offset = -(midIdx * ITEM_HEIGHT + ITEM_HEIGHT / 2 - winH / 2);
     strip.style.transform = `translateY(${offset}px)`;
     strip.classList.add("settled");
-    const centerItem = strip.children[midIdx] as HTMLElement;
-    if (centerItem) centerItem.classList.add("landed");
+    const c = strip.children[midIdx] as HTMLElement;
+    if (c) c.classList.add("landed");
   }, [ideas]);
 
   const spin = useCallback(
@@ -131,19 +129,16 @@ export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
       const strip = reelRef.current!;
       const winH = windowRef.current!.offsetHeight;
 
-      // Simulate physics to find natural stop distance
-      let simVel = velocity;
-      let simDist = 0;
-      while (simVel >= STOP_THRESHOLD) {
-        simDist += simVel;
-        simVel *= FRICTION;
+      let simV = velocity,
+        simD = 0;
+      while (simV >= STOP_THRESHOLD) {
+        simD += simV;
+        simV *= FRICTION;
       }
-      const centerAtStop = simDist + winH / 2;
-      const naturalIndex = Math.round((centerAtStop - ITEM_HEIGHT / 2) / ITEM_HEIGHT);
-      const LANDING_INDEX = naturalIndex + 1;
+      const LANDING_INDEX =
+        Math.round((simD + winH / 2 - ITEM_HEIGHT / 2) / ITEM_HEIGHT) + 1;
       const REEL_COUNT = LANDING_INDEX + 3;
 
-      // Pick final idea
       let finalIdx: number;
       do {
         finalIdx = Math.floor(Math.random() * ideas.length);
@@ -151,21 +146,22 @@ export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
       lastIndexRef.current = finalIdx;
       const finalIdea = ideas[finalIdx];
 
-      // Build reel content
-      let reelIdeas: Idea[] = [];
-      while (reelIdeas.length < REEL_COUNT) {
-        reelIdeas = reelIdeas.concat(shuffleArray(ideas));
-      }
-      reelIdeas = reelIdeas.slice(0, REEL_COUNT);
-      reelIdeas[LANDING_INDEX] = finalIdea;
+      let reel: Idea[] = [];
+      while (reel.length < REEL_COUNT)
+        reel = reel.concat(shuffleArray(ideas));
+      reel = reel.slice(0, REEL_COUNT);
+      reel[LANDING_INDEX] = finalIdea;
 
-      const TARGET_Y = -(LANDING_INDEX * ITEM_HEIGHT + ITEM_HEIGHT / 2 - winH / 2);
+      const TARGET_Y = -(
+        LANDING_INDEX * ITEM_HEIGHT +
+        ITEM_HEIGHT / 2 -
+        winH / 2
+      );
 
-      // Build DOM
       strip.innerHTML = "";
       strip.classList.remove("settled");
       strip.style.transform = "translateY(0px)";
-      reelIdeas.forEach((idea, i) => {
+      reel.forEach((idea, i) => {
         const div = document.createElement("div");
         div.className = "reel-item";
         div.textContent = idea.title;
@@ -174,44 +170,38 @@ export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
       });
 
       function styleItems(y: number) {
-        const viewCenter = winH / 2;
-        const items = strip.children;
-        for (let i = 0; i < items.length; i++) {
-          const el = items[i] as HTMLElement;
-          const itemCenter = i * ITEM_HEIGHT + ITEM_HEIGHT / 2 + y;
-          const dist = Math.abs(itemCenter - viewCenter);
-          const norm = Math.min(dist / ITEM_HEIGHT, 1);
-          el.style.transform = `scale(${1.3 - norm * 0.3})`;
-          el.style.opacity = `${1 - norm * 0.7}`;
+        const vc = winH / 2;
+        for (let i = 0; i < strip.children.length; i++) {
+          const el = strip.children[i] as HTMLElement;
+          const ic = i * ITEM_HEIGHT + ITEM_HEIGHT / 2 + y;
+          const norm = Math.min(Math.abs(ic - vc) / (ITEM_HEIGHT * 1.5), 1);
+          el.style.transform = `scale(${1.2 - norm * 0.35})`;
+          el.style.opacity = `${1 - norm * 0.75}`;
         }
       }
 
-      let pos = 0;
-      let vel = velocity;
-      let lastBoundary = 0;
-      let lastTime: number | null = null;
+      let pos = 0,
+        vel = velocity,
+        lastB = 0,
+        lastT: number | null = null;
 
       function animate(ts: number) {
-        if (lastTime === null) lastTime = ts;
-        const rawDt = (ts - lastTime) / 16.667;
-        const dt = Math.min(rawDt, 3);
-        lastTime = ts;
+        if (lastT === null) lastT = ts;
+        const dt = Math.min((ts - lastT) / 16.667, 3);
+        lastT = ts;
         if (dt === 0) {
           animRef.current = requestAnimationFrame(animate);
           return;
         }
-
         pos += vel * dt;
         vel *= Math.pow(FRICTION, dt);
         strip.style.transform = `translateY(${-pos}px)`;
         styleItems(-pos);
-
-        const boundary = Math.floor(pos / ITEM_HEIGHT);
-        if (boundary > lastBoundary) {
+        const b = Math.floor(pos / ITEM_HEIGHT);
+        if (b > lastB) {
           playTick(Math.min(1 - vel / velocity, 0.95));
-          lastBoundary = boundary;
+          lastB = b;
         }
-
         if (vel < STOP_THRESHOLD) {
           snapToTarget();
           return;
@@ -220,32 +210,29 @@ export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
       }
 
       function snapToTarget() {
-        const startY = -pos;
-        const distance = TARGET_Y - startY;
-        const startTime = performance.now();
-        const duration = 650;
-
-        function springAnimate(now: number) {
-          const elapsed = now - startTime;
-          const t = Math.min(elapsed / duration, 1);
-          const spring = 1 - Math.exp(-7 * t) * Math.cos(5 * t);
-          const y = startY + distance * spring;
+        const sY = -pos;
+        const dist = TARGET_Y - sY;
+        const t0 = performance.now();
+        function springAnim(now: number) {
+          const t = Math.min((now - t0) / 650, 1);
+          const s = 1 - Math.exp(-7 * t) * Math.cos(5 * t);
+          const y = sY + dist * s;
           strip.style.transform = `translateY(${y}px)`;
           styleItems(y);
           if (t < 1) {
-            animRef.current = requestAnimationFrame(springAnimate);
+            animRef.current = requestAnimationFrame(springAnim);
           } else {
             strip.style.transform = `translateY(${TARGET_Y}px)`;
-            onSettle();
+            settle();
           }
         }
-        animRef.current = requestAnimationFrame(springAnimate);
+        animRef.current = requestAnimationFrame(springAnim);
       }
 
-      function onSettle() {
+      function settle() {
         strip.classList.add("settled");
-        const landing = strip.querySelector('[data-landing="true"]') as HTMLElement;
-        if (landing) landing.classList.add("landed");
+        const el = strip.querySelector('[data-landing="true"]') as HTMLElement;
+        if (el) el.classList.add("landed");
         playLand();
         spinningRef.current = false;
         setIsSpinning(false);
@@ -257,107 +244,96 @@ export default function SlotMachine({ ideas, onLand }: SlotMachineProps) {
     [ideas, onLand]
   );
 
-  // Lever drag interaction
+  // Vertical pull-down lever drag
   useEffect(() => {
-    if (!armRef.current) return;
-    const armEl: HTMLDivElement = armRef.current;
-    const knob = armEl.querySelector(".lever-knob") as HTMLElement;
-    if (!knob) return;
-
-    const MAX_ANGLE = 180;
-    const DRAG_SENS = 280;
-    let isDragging = false;
+    if (!leverRef.current) return;
+    const lever: HTMLDivElement = leverRef.current;
+    let dragging = false;
     let startY = 0;
-    let currentAngle = 0;
-    let hasMoved = false;
+    let pull = 0;
 
     function onDown(e: PointerEvent) {
       if (spinningRef.current) return;
       e.preventDefault();
-      knob.setPointerCapture(e.pointerId);
-      isDragging = true;
-      hasMoved = false;
-      armEl.classList.add("grabbing");
-      armEl.classList.remove("hint", "spring-back");
-      armEl.style.transition = "";
+      lever.setPointerCapture(e.pointerId);
+      dragging = true;
+      lever.classList.add("grabbing");
+      lever.classList.remove("spring-back");
+      lever.style.transition = "none";
       startY = e.clientY;
-      currentAngle = 0;
+      pull = 0;
       ensureAudio();
     }
-
     function onMove(e: PointerEvent) {
-      if (!isDragging) return;
-      const deltaY = Math.max(0, e.clientY - startY);
-      if (deltaY > 3) hasMoved = true;
-      currentAngle = Math.min(deltaY * (MAX_ANGLE / DRAG_SENS), MAX_ANGLE);
-      armEl.style.transform = `rotate(${currentAngle}deg)`;
+      if (!dragging) return;
+      pull = Math.min(Math.max(0, e.clientY - startY), LEVER_TRAVEL);
+      lever.style.transform = `translate(-50%, -50%) translateY(${pull}px)`;
     }
-
     function onUp() {
-      if (!isDragging) return;
-      isDragging = false;
-      armEl.classList.remove("grabbing");
-      const normalizedPull = currentAngle / MAX_ANGLE;
-      armEl.classList.add("spring-back");
-      armEl.style.transform = "rotate(0deg)";
-      setTimeout(() => armEl.classList.remove("spring-back"), 600);
-
-      if (hasMoved || currentAngle > 0) {
+      if (!dragging) return;
+      dragging = false;
+      lever.classList.remove("grabbing");
+      lever.classList.add("spring-back");
+      lever.style.transform = "translate(-50%, -50%) translateY(0px)";
+      if (pull > 8) {
         playClunk();
-        spin(20 + Math.min(normalizedPull, 1) * 35);
-      } else {
-        playClunk();
-        spin(25);
+        spin(15 + (pull / LEVER_TRAVEL) * 40);
       }
-      currentAngle = 0;
-      hasMoved = false;
+      pull = 0;
     }
 
-    knob.addEventListener("pointerdown", onDown);
-    knob.addEventListener("pointermove", onMove);
-    knob.addEventListener("pointerup", onUp);
-    knob.addEventListener("pointercancel", onUp);
-
-    // Hint animation on first load
-    armEl.classList.add("hint");
-    const onHintEnd = () => armEl.classList.remove("hint");
-    armEl.addEventListener("animationend", onHintEnd, { once: true });
-
+    lever.addEventListener("pointerdown", onDown);
+    lever.addEventListener("pointermove", onMove);
+    lever.addEventListener("pointerup", onUp);
+    lever.addEventListener("pointercancel", onUp);
     return () => {
-      knob.removeEventListener("pointerdown", onDown);
-      knob.removeEventListener("pointermove", onMove);
-      knob.removeEventListener("pointerup", onUp);
-      knob.removeEventListener("pointercancel", onUp);
-      armEl.removeEventListener("animationend", onHintEnd);
+      lever.removeEventListener("pointerdown", onDown);
+      lever.removeEventListener("pointermove", onMove);
+      lever.removeEventListener("pointerup", onUp);
+      lever.removeEventListener("pointercancel", onUp);
     };
   }, [spin]);
 
   return (
     <div className="flex flex-col items-center">
-      {/* Reel assembly */}
       <div className="reel-assembly">
-        {/* Reel window */}
-        <div className="reel-window" ref={windowRef}>
-          <div className="reel-strip" ref={reelRef} />
-          <div className="reel-center-line" />
+        <div className="slot-machine-body">
+          <div className="reel-window" ref={windowRef}>
+            <div className="reel-strip" ref={reelRef} />
+            <div className="reel-center-line" />
+          </div>
         </div>
 
-        {/* Lever handle (desktop only) */}
-        <div className="lever-handle hidden sm:block" aria-hidden="true">
-          {!hasSpun && (
-            <span className="lever-hint-text">← Pull</span>
-          )}
-          <div className="lever-arm" ref={armRef}>
+        {/* Vertical lever */}
+        <div className="lever-container hidden sm:flex">
+          <div className="lever-track" />
+          <div
+            className="lever-arm"
+            ref={leverRef}
+            style={{ transform: "translate(-50%, -50%) translateY(0px)" }}
+          >
+            {!hasSpun && <span className="lever-hint-text">↓ Pull</span>}
             <div className="lever-knob">
               <div className="lever-knob-grip" />
             </div>
             <div className="lever-shaft" />
           </div>
-          <div className="lever-pivot" />
         </div>
       </div>
 
-      {/* Mobile spin button */}
+      <button
+        onClick={() => {
+          if (!spinningRef.current) {
+            playClunk();
+            spin(30);
+          }
+        }}
+        disabled={isSpinning}
+        className="desktop-spin-btn hidden sm:block"
+      >
+        {hasSpun ? "🔄 Spin again" : "✨ Spin!"}
+      </button>
+
       <button
         onClick={() => {
           if (!spinningRef.current) {
