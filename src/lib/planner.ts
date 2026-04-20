@@ -296,6 +296,8 @@ function buildCoreFeatures(state: PlannerState): string[] {
     case "create":
       features.push("Build the creative canvas or game area", "Add interactive controls", "Include save/share/export features");
       break;
+    default:
+      features.push("Build the main feature", "Add supporting functionality", "Connect everything together");
   }
   return features;
 }
