@@ -32,6 +32,14 @@ export default function Hero({ ideas }: HeroProps) {
           <span className="text-accent-purple">GitHub Copilot</span> and vibes
           only.
         </p>
+        <p className="mt-4">
+          <a
+            href="/vibe-workshop-ideas/plan"
+            className="inline-flex items-center gap-2 text-sm font-mono text-accent-cyan hover:underline"
+          >
+            🗺️ Or plan your own project from scratch →
+          </a>
+        </p>
       </div>
 
       {/* Slot machine */}

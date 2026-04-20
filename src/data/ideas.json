@@ -17,7 +17,8 @@
       "css",
       "personal"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "weather-dashboard",
@@ -37,7 +38,8 @@
       "charts",
       "dashboard"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "students"
   },
   {
     "id": "todo-cli",
@@ -58,7 +60,8 @@
       "nodejs",
       "productivity"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "markdown-previewer",
@@ -78,7 +81,8 @@
       "preview",
       "realtime"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "rest-api-express",
@@ -100,7 +104,8 @@
       "crud",
       "typescript"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "snake-game",
@@ -120,7 +125,8 @@
       "game",
       "classic"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "pomodoro-timer",
@@ -140,7 +146,8 @@
       "productivity",
       "focus"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "quiz-app",
@@ -160,7 +167,8 @@
       "api",
       "interactive"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "students"
   },
   {
     "id": "expense-tracker",
@@ -180,7 +188,8 @@
       "tracking",
       "budgeting"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "chat-bot",
@@ -202,7 +211,8 @@
       "chat",
       "interface"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "github-profile-viewer",
@@ -222,7 +232,8 @@
       "api",
       "dashboard"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "students"
   },
   {
     "id": "file-organizer-cli",
@@ -243,7 +254,8 @@
       "automation",
       "cli"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "habit-tracker",
@@ -263,7 +275,8 @@
       "heatmap",
       "tracking"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "ascii-art-generator",
@@ -283,7 +296,8 @@
       "image",
       "converter"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "color-palette-generator",
@@ -303,7 +317,8 @@
       "palette",
       "generator"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "recipe-api",
@@ -324,7 +339,8 @@
       "api",
       "food"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "memory-card-game",
@@ -344,7 +360,8 @@
       "matching",
       "game"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "url-shortener",
@@ -365,7 +382,8 @@
       "analytics",
       "qrcode"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "generative-art",
@@ -385,7 +403,8 @@
       "canvas",
       "particles"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "type-racer",
@@ -405,7 +424,8 @@
       "wpm",
       "test"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "json-formatter",
@@ -425,7 +445,8 @@
       "validator",
       "devtools"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "music-visualizer",
@@ -445,7 +466,8 @@
       "audio",
       "canvas"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "real-time-polls",
@@ -466,7 +488,8 @@
       "websockets",
       "voting"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "git-stats-cli",
@@ -487,7 +510,8 @@
       "analytics",
       "cli"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "pixel-art-editor",
@@ -507,7 +531,8 @@
       "editor",
       "drawing"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "task-board",
@@ -527,7 +552,8 @@
       "drag-and-drop",
       "productivity"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "api-health-monitor",
@@ -548,7 +574,8 @@
       "health",
       "dashboard"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "image-filter-app",
@@ -568,7 +595,8 @@
       "canvas",
       "photo"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "text-adventure",
@@ -588,7 +616,8 @@
       "game",
       "interactive"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "regex-tester",
@@ -608,7 +637,8 @@
       "devtools",
       "patterns"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "password-generator",
@@ -628,7 +658,8 @@
       "generator",
       "utility"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "csv-analyzer",
@@ -648,7 +679,8 @@
       "analytics",
       "charts"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "students"
   },
   {
     "id": "npm-cli-scaffold",
@@ -669,7 +701,8 @@
       "cli",
       "template"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "tetris",
@@ -689,7 +722,8 @@
       "canvas",
       "classic"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "note-taking-app",
@@ -709,7 +743,8 @@
       "productivity",
       "editor"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "api-mock-server",
@@ -731,7 +766,8 @@
       "testing",
       "server"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "landing-page-generator",
@@ -752,7 +788,8 @@
       "ai",
       "template"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "platformer-game",
@@ -772,7 +809,8 @@
       "game",
       "canvas"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "data-pipeline-cli",
@@ -793,7 +831,8 @@
       "csv",
       "cli"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "browser-extension",
@@ -813,7 +852,8 @@
       "tabs",
       "productivity"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "countdown-event",
@@ -833,7 +873,8 @@
       "events",
       "animation"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "graphql-api",
@@ -854,7 +895,8 @@
       "movies",
       "apollo"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "code-screenshot",
@@ -874,7 +916,8 @@
       "sharing",
       "syntax"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "fitness-tracker-mobile",
@@ -894,7 +937,8 @@
       "tracker",
       "mobile"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "emoji-search",
@@ -914,7 +958,8 @@
       "unicode",
       "utility"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "general"
   },
   {
     "id": "cli-dashboard",
@@ -935,7 +980,8 @@
       "system",
       "monitoring"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
   },
   {
     "id": "drawing-canvas",
@@ -956,6 +1002,857 @@
       "canvas",
       "realtime"
     ],
-    "source": "curated"
+    "source": "curated",
+    "audience": "engineers"
+  },
+  {
+    "id": "my-first-website",
+    "title": "My First Website",
+    "description": "Create your very own website about yourself! Add your name, favorite things, photos, and fun colors.",
+    "vibePrompt": "I want to build my very first website about me. It should have my name in big letters, a section about my favorite animals, foods, and hobbies, a colorful background, and fun emoji decorations. Make it bright and cheerful! Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "15min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "first-website",
+      "kids",
+      "personal",
+      "fun"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "joke-generator",
+    "title": "Joke Generator",
+    "description": "A fun app that shows a random joke every time you click a button. Laugh out loud!",
+    "vibePrompt": "I want to build a fun joke generator app. When I click a big colorful button, it shows a random funny joke with a punchline reveal. Add silly sound effects, laughing emoji animations, and a 'Tell Another' button. Make it look playful and colorful! Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "15min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "jokes",
+      "kids",
+      "fun",
+      "random"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "virtual-pet",
+    "title": "Virtual Pet",
+    "description": "Take care of a cute virtual pet! Feed it, play with it, and keep it happy. Watch its mood change.",
+    "vibePrompt": "I want to build a virtual pet app with a cute animal character on screen. I can feed it, play with it, and put it to sleep using buttons. The pet should show different emotions (happy, hungry, sleepy, playful) with fun animations. Add a happiness meter and a name input. Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "pet",
+      "kids",
+      "interactive",
+      "fun"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "birthday-card-maker",
+    "title": "Birthday Card Maker",
+    "description": "Design a beautiful digital birthday card with custom text, colors, stickers, and confetti animations.",
+    "vibePrompt": "I want to build a birthday card maker where I can type a person's name and a birthday message, pick fun backgrounds and colors, add sticker decorations like balloons and cake, and see confetti animations. Add a 'Print' button so I can give it to someone. Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "birthday",
+      "cards",
+      "creative",
+      "kids"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "story-generator",
+    "title": "Silly Story Generator",
+    "description": "Create hilarious stories by filling in words! Like Mad Libs \u2014 type nouns, verbs, and adjectives to make funny tales.",
+    "vibePrompt": "I want to build a silly story generator like Mad Libs. The app asks me to type words like a noun, a verb, an adjective, and a name, then puts them into a funny story template. Show the finished story with the filled-in words highlighted in a different color. Include at least 5 different story templates. Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "15min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "stories",
+      "madlibs",
+      "kids",
+      "creative"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "math-quiz-game",
+    "title": "Math Quiz Game",
+    "description": "Test your math skills! Answer addition, subtraction, and multiplication questions to score points and earn stars.",
+    "vibePrompt": "I want to build a fun math quiz game. It shows a math problem (addition, subtraction, or multiplication) and I type the answer. If I get it right, I earn a star and hear a happy sound. If wrong, it shows the correct answer. Add a score counter, a timer, and difficulty levels (easy, medium, hard). Make it colorful and fun! Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "math",
+      "quiz",
+      "kids",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "choose-your-adventure",
+    "title": "Choose Your Own Adventure",
+    "description": "An interactive story where YOU make the choices! Different paths lead to different endings.",
+    "vibePrompt": "I want to build a choose-your-own-adventure story game. The app shows a story paragraph and gives me two or three choices to pick what happens next. Different choices lead to different parts of the story with different endings. Add fun pictures or emoji for each scene. Include at least 3 possible endings. Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "adventure",
+      "story",
+      "interactive",
+      "kids"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "animal-sound-quiz",
+    "title": "Animal Sound Quiz",
+    "description": "Can you match the animal to its sound? A fun quiz game with animal pictures and sound effects.",
+    "vibePrompt": "I want to build an animal sound quiz game. The app shows a picture of an animal and plays its sound, then I pick the correct animal name from multiple choices. Add a score tracker, fun animations when I get it right, and at least 10 different animals. Make it bright and colorful with big buttons! Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "animals",
+      "quiz",
+      "sounds",
+      "kids"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "digital-lemonade-stand",
+    "title": "Digital Lemonade Stand",
+    "description": "Run your own lemonade stand! Set prices, buy supplies, and try to make the most money.",
+    "vibePrompt": "I want to build a digital lemonade stand game. I start with some money and buy lemons and sugar. I set my lemonade price, and customers come to buy. The weather changes each day and affects how many customers come. I need to make a profit! Show my earnings, supplies, and a daily summary. Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "lemonade",
+      "business",
+      "game",
+      "kids"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "drawing-app-kids",
+    "title": "My Drawing App",
+    "description": "A simple and colorful drawing app! Pick colors, change brush sizes, and create your own art masterpiece.",
+    "vibePrompt": "I want to build a simple drawing app for kids. It should have a big white canvas, a row of bright color buttons to pick from, a slider to change brush size, an eraser, a clear button, and a save button to download my drawing. Make the buttons big and easy to click! Plan the design and layout first, then build it.",
+    "category": "fun",
+    "difficulty": "beginner",
+    "duration": "15min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "drawing",
+      "art",
+      "creative",
+      "kids"
+    ],
+    "source": "curated",
+    "audience": "kids"
+  },
+  {
+    "id": "pitch-deck-generator",
+    "title": "Pitch Deck Generator",
+    "description": "Generate a professional pitch deck by answering a few questions about your business idea, market, and goals.",
+    "vibePrompt": "I want to build a pitch deck generator for business presentations. The user answers questions about their company name, problem statement, solution, target market, business model, and team. The app generates a structured pitch deck with sections for each slide, professional styling, and a downloadable format. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "pitch",
+      "startup",
+      "presentation",
+      "business"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "meeting-agenda-builder",
+    "title": "Meeting Agenda Builder",
+    "description": "Create structured meeting agendas with topics, time allocations, presenters, and shareable output.",
+    "vibePrompt": "I want to build a meeting agenda builder. Users add a meeting title, date, and attendees, then create agenda items with topic, presenter, time allocation, and notes. The app shows total meeting time, warns if it exceeds the scheduled slot, and can export the agenda as a printable page or email-friendly format. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "meeting",
+      "agenda",
+      "productivity",
+      "business"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "project-status-dashboard",
+    "title": "Project Status Dashboard",
+    "description": "A visual dashboard to track project progress, milestones, team assignments, and deadlines at a glance.",
+    "vibePrompt": "I want to build a project status dashboard. Users create projects with milestones, deadlines, and team member assignments. The dashboard shows progress bars, upcoming deadlines, a timeline view, and status indicators (on track, at risk, behind). Include a summary card with overall project health. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "project",
+      "dashboard",
+      "tracking",
+      "management"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "customer-feedback-form",
+    "title": "Customer Feedback Form",
+    "description": "A professional customer feedback form with star ratings, categories, and a results summary dashboard.",
+    "vibePrompt": "I want to build a customer feedback form and results dashboard. The form collects customer name, email, star rating (1-5), feedback category (product, service, support, other), and comments. The dashboard shows average rating, feedback count by category as a pie chart, recent feedback list, and trends over time. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "feedback",
+      "customer",
+      "survey",
+      "business"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "invoice-template",
+    "title": "Invoice Template Generator",
+    "description": "Create professional invoices with line items, tax calculations, and downloadable PDF output.",
+    "vibePrompt": "I want to build an invoice generator. Users enter their business name, client details, and add line items with description, quantity, and unit price. The app calculates subtotals, applies tax, shows a grand total, and displays it as a professional invoice with a printable layout. Include invoice numbering and a due date field. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "invoice",
+      "billing",
+      "finance",
+      "business"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "team-directory",
+    "title": "Team Directory",
+    "description": "A searchable team directory with photos, roles, departments, and contact info for your organization.",
+    "vibePrompt": "I want to build a team directory web app. Each team member has a card showing their name, photo, role, department, email, and phone. Include search by name or role, filter by department, and a grid/list view toggle. Add a quick contact button and an org chart view option. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "team",
+      "directory",
+      "organization",
+      "contacts"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "okr-tracker",
+    "title": "OKR Tracker",
+    "description": "Track Objectives and Key Results for your team. Set goals, measure progress, and align on priorities.",
+    "vibePrompt": "I want to build an OKR (Objectives and Key Results) tracker. Users create objectives with key results that have target values and current progress. The app shows progress bars for each key result, overall objective completion percentage, and a team summary view. Include quarterly views and status labels (on track, behind, at risk). Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "okr",
+      "goals",
+      "tracking",
+      "business"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "competitive-analysis-dashboard",
+    "title": "Competitive Analysis Dashboard",
+    "description": "Compare your business against competitors across key metrics with visual comparison charts.",
+    "vibePrompt": "I want to build a competitive analysis dashboard. Users enter their company and competitors with data like pricing, features, market share, and ratings. The app displays comparison tables, radar charts for feature comparison, and a SWOT analysis template. Include the ability to add notes and highlight differentiators. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "competitive",
+      "analysis",
+      "dashboard",
+      "strategy"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "email-template-builder",
+    "title": "Email Template Builder",
+    "description": "Design professional email templates with drag-and-drop blocks, preview, and copy-ready HTML output.",
+    "vibePrompt": "I want to build an email template builder. Users pick a template type (welcome, newsletter, announcement, follow-up), customize the header, body sections, call-to-action button, and footer. Include a live preview, color scheme picker, and a button to copy the final HTML. Pre-load with 5 professional templates. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "email",
+      "template",
+      "marketing",
+      "business"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "social-media-planner",
+    "title": "Social Media Content Planner",
+    "description": "Plan and schedule social media posts across platforms with a calendar view and content previews.",
+    "vibePrompt": "I want to build a social media content planner. Users create posts with text, select a platform (Twitter, LinkedIn, Instagram), pick a date and time, and add hashtags. Show a monthly calendar view with posts color-coded by platform, a weekly agenda view, and post character count warnings. Include a content ideas bank section. Plan the design and layout first, then build it.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode",
+      "Copilot Cloud Agent"
+    ],
+    "tags": [
+      "social-media",
+      "planner",
+      "content",
+      "marketing"
+    ],
+    "source": "curated",
+    "audience": "business"
+  },
+  {
+    "id": "study-timer",
+    "title": "Study Timer with Stats",
+    "description": "A smart study timer that tracks your study sessions, subjects, and shows weekly study statistics.",
+    "vibePrompt": "I want to build a study timer app. I select a subject, start a timer, and it logs my study session. The app shows total time studied today and this week, a breakdown by subject as a bar chart, and a daily study streak counter. Include a focus mode that blocks the rest of the page. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "study",
+      "timer",
+      "productivity",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "flashcard-app",
+    "title": "Flashcard Study App",
+    "description": "Create and study flashcards with flip animations, categories, and spaced repetition scoring.",
+    "vibePrompt": "I want to build a flashcard study app. Users create decks of flashcards with a question on the front and answer on the back. Cards flip with a smooth animation on click. Include a shuffle mode, a 'know it / still learning' sorting system, and progress tracking showing how many cards you've mastered per deck. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "flashcards",
+      "study",
+      "learning",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "gpa-calculator",
+    "title": "GPA Calculator",
+    "description": "Calculate your semester and cumulative GPA by entering courses, credits, and grades.",
+    "vibePrompt": "I want to build a GPA calculator. Users add courses with the course name, credit hours, and letter grade. The app calculates the semester GPA and cumulative GPA, shows a summary table, and visualizes GPA trends across semesters as a line chart. Include a 'what if' mode to see how future grades would affect GPA. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "gpa",
+      "grades",
+      "calculator",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "class-schedule-organizer",
+    "title": "Class Schedule Organizer",
+    "description": "Build a weekly class schedule with color-coded courses, room numbers, and professor names.",
+    "vibePrompt": "I want to build a class schedule organizer. Users add courses with name, time, days of the week, room number, and professor. The app shows a weekly timetable grid with color-coded course blocks, handles time conflicts with warnings, and can switch between week and list views. Include an export feature for printing. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "schedule",
+      "classes",
+      "organizer",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "book-review-blog",
+    "title": "Book Review Blog",
+    "description": "A personal blog to write and share book reviews with ratings, cover images, and reading progress.",
+    "vibePrompt": "I want to build a book review blog. Users add books with title, author, cover image URL, star rating, and a written review. The main page shows a grid of book cards, clicking opens the full review. Include a reading status filter (reading, finished, want to read), a search bar, and total books read counter. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "books",
+      "reviews",
+      "blog",
+      "reading"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "science-experiment-logger",
+    "title": "Science Experiment Logger",
+    "description": "Log science experiments with hypothesis, materials, procedure, results, and photo uploads.",
+    "vibePrompt": "I want to build a science experiment logger. Users create experiment entries with a title, date, hypothesis, materials list, step-by-step procedure, observations, and conclusion. The app shows experiments as cards in a timeline view, with the ability to add photos and tag experiments by subject (biology, chemistry, physics). Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "science",
+      "experiments",
+      "logging",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "language-learning-quiz",
+    "title": "Language Learning Quiz",
+    "description": "Practice vocabulary in different languages with flashcards, multiple choice, and typing challenges.",
+    "vibePrompt": "I want to build a language learning quiz app. Users pick a language (Spanish, French, or Japanese), then practice vocabulary with three modes: flashcard, multiple choice, and type-the-answer. Track correct and incorrect answers, show a mastery percentage for each word, and include categories like greetings, food, and numbers. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "language",
+      "quiz",
+      "learning",
+      "vocabulary"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "history-timeline",
+    "title": "Interactive History Timeline",
+    "description": "Create a visual timeline of historical events with dates, descriptions, images, and clickable details.",
+    "vibePrompt": "I want to build an interactive history timeline. Users add events with a year, title, description, and image URL. The timeline displays events chronologically as a scrollable vertical timeline with alternating left-right cards. Clicking an event shows full details. Include filters by era or category and a zoom slider to adjust the time scale. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "history",
+      "timeline",
+      "interactive",
+      "education"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "campus-map",
+    "title": "Interactive Campus Map",
+    "description": "A clickable campus map showing buildings, departments, dining halls, and directions between locations.",
+    "vibePrompt": "I want to build an interactive campus map. Create a visual map layout with clickable building markers. Clicking a building shows its name, departments, hours, and a photo. Include a search bar to find buildings, a legend for building types (academic, dining, recreation, housing), and highlight the selected building. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "campus",
+      "map",
+      "interactive",
+      "navigation"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "group-project-planner",
+    "title": "Group Project Planner",
+    "description": "Organize group projects with task assignments, deadlines, progress tracking, and team communication.",
+    "vibePrompt": "I want to build a group project planner. Users create a project, add team members, and break the project into tasks with assignees and due dates. The app shows a shared task board with status columns (to do, in progress, done), a team progress view showing each member's tasks, and a project timeline with milestones. Plan the design and layout first, then build it.",
+    "category": "education",
+    "difficulty": "intermediate",
+    "duration": "1hr",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "group",
+      "project",
+      "planner",
+      "teamwork"
+    ],
+    "source": "curated",
+    "audience": "students"
+  },
+  {
+    "id": "recipe-book",
+    "title": "My Recipe Book",
+    "description": "Save and organize your favorite recipes with ingredients, steps, photos, and meal categories.",
+    "vibePrompt": "I want to build a personal recipe book app. Users add recipes with a title, photo, ingredients list, step-by-step instructions, prep time, cook time, and category (breakfast, lunch, dinner, dessert). The main page shows recipe cards in a grid, with search and category filters. Include a favorite button and a serving size adjuster. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "recipes",
+      "cooking",
+      "food",
+      "personal"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "family-photo-gallery",
+    "title": "Family Photo Gallery",
+    "description": "A beautiful photo gallery to organize and display family photos by events and dates.",
+    "vibePrompt": "I want to build a family photo gallery web app. Users create albums with a title and date, then add photos with captions. The gallery shows albums as cover cards, clicking opens a lightbox slideshow with navigation arrows. Include a timeline view, search by caption, and a favorites section. Make it look warm and elegant. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "photos",
+      "gallery",
+      "family",
+      "memories"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "travel-bucket-list",
+    "title": "Travel Bucket List",
+    "description": "Track places you want to visit and places you've been, with photos, notes, and a world map view.",
+    "vibePrompt": "I want to build a travel bucket list app. Users add destinations with name, country, a photo, and notes about why they want to go. Mark places as 'want to visit' or 'visited'. Show destinations as cards with a filter for visited and unvisited, a counter showing places visited vs. total, and a simple map visualization. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "travel",
+      "bucket-list",
+      "places",
+      "adventure"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "gratitude-journal",
+    "title": "Gratitude Journal",
+    "description": "Write daily gratitude entries with mood tracking, prompts, and a beautiful calendar overview.",
+    "vibePrompt": "I want to build a gratitude journal app. Each day, users write three things they're grateful for, select a mood emoji, and optionally respond to a daily prompt. The app shows a calendar view with mood colors for each day, a streak counter for consecutive days, and the ability to look back at past entries. Make it calming and minimal. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "gratitude",
+      "journal",
+      "wellness",
+      "mindfulness"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "workout-tracker",
+    "title": "Simple Workout Tracker",
+    "description": "Log your daily workouts with exercise type, duration, and calories. See your weekly activity summary.",
+    "vibePrompt": "I want to build a simple workout tracker. Users log exercises by picking a type (running, walking, cycling, yoga, strength), entering duration and optional calories burned. The app shows today's activity, a weekly summary with total time and calories, and a 7-day activity bar chart. Include motivational streak tracking. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "workout",
+      "fitness",
+      "health",
+      "tracking"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "movie-watchlist",
+    "title": "Movie Watchlist",
+    "description": "Keep track of movies you want to watch and ones you've seen, with ratings and reviews.",
+    "vibePrompt": "I want to build a movie watchlist app. Users add movies with a title, year, genre, and poster image URL. They can mark movies as 'want to watch' or 'watched' and add a star rating and short review for watched ones. Show a grid of movie cards, filters by genre and status, and stats like total movies watched and average rating. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "movies",
+      "watchlist",
+      "entertainment",
+      "reviews"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "plant-care-tracker",
+    "title": "Plant Care Tracker",
+    "description": "Keep your plants alive! Track watering schedules, sunlight needs, and plant health for each of your plants.",
+    "vibePrompt": "I want to build a plant care tracker. Users add plants with a name, photo, species, watering frequency, and sunlight preference. The app shows plant cards with a 'days since last watered' indicator and a water button to log watering. Include overdue watering alerts, a calendar view of watering history, and care tips for common plants. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "plants",
+      "gardening",
+      "care",
+      "tracking"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "daily-mood-tracker",
+    "title": "Daily Mood Tracker",
+    "description": "Track your daily mood with emoji ratings, notes, and view mood patterns over weeks and months.",
+    "vibePrompt": "I want to build a daily mood tracker. Each day, users select a mood from 5 emoji options (great, good, okay, bad, awful) and add an optional note about their day. The app shows a month view with mood colors for each day, a mood frequency pie chart, and a streak of consecutive days tracked. Make it feel friendly and supportive. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "mood",
+      "wellness",
+      "tracking",
+      "journal"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "personal-budget",
+    "title": "Personal Budget Planner",
+    "description": "Plan your monthly budget with income and expense categories, see where your money goes.",
+    "vibePrompt": "I want to build a personal budget planner. Users set their monthly income and add budget categories (rent, groceries, entertainment, savings, etc.) with planned amounts. As they log actual expenses, the app shows planned vs. actual spending per category with progress bars, a remaining budget summary, and a pie chart of spending distribution. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "budget",
+      "finance",
+      "money",
+      "planning"
+    ],
+    "source": "curated",
+    "audience": "general"
+  },
+  {
+    "id": "wish-list",
+    "title": "Wish List Organizer",
+    "description": "Create and organize wish lists for holidays, birthdays, or anytime with prices, links, and priority.",
+    "vibePrompt": "I want to build a wish list organizer. Users create lists (birthday, holiday, just because) and add items with a name, price, link to buy, image, and priority (must have, nice to have, dream). Show items as cards sorted by priority, a total cost summary per list, and a progress indicator if items are marked as purchased. Plan the design and layout first, then build it.",
+    "category": "web",
+    "difficulty": "beginner",
+    "duration": "30min",
+    "tools": [
+      "GitHub Copilot",
+      "Copilot Agent Mode"
+    ],
+    "tags": [
+      "wishlist",
+      "shopping",
+      "gifts",
+      "organizing"
+    ],
+    "source": "curated",
+    "audience": "general"
   }
 ]
