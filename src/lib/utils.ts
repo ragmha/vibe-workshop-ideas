@@ -1,4 +1,4 @@
-import type { Idea, Category, Difficulty, Duration } from "@/types/idea";
+import type { Idea, Category, Difficulty, Duration, Audience } from "@/types/idea";
 
 export function getRandomIdea(ideas: Idea[]): Idea | null {
   if (ideas.length === 0) return null;
@@ -17,6 +17,7 @@ export interface IdeaFilters {
   category?: Category | "all";
   difficulty?: Difficulty | "all";
   duration?: Duration | "all";
+  audience?: Audience | "all";
   search?: string;
   source?: "curated" | "ai" | "all";
 }
@@ -31,6 +32,10 @@ export function filterIdeas(ideas: Idea[], filters: IdeaFilters): Idea[] {
     }
     if (filters.duration && filters.duration !== "all") {
       if (idea.duration !== filters.duration) return false;
+    }
+    if (filters.audience && filters.audience !== "all") {
+      if (idea.audience !== filters.audience && idea.audience !== "general")
+        return false;
     }
     if (filters.source && filters.source !== "all") {
       if (idea.source !== filters.source) return false;

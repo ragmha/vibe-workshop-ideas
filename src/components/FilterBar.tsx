@@ -5,9 +5,11 @@ import {
   CATEGORIES,
   DIFFICULTIES,
   DURATIONS,
+  AUDIENCES,
   CATEGORY_LABELS,
   DIFFICULTY_LABELS,
   DURATION_LABELS,
+  AUDIENCE_LABELS,
 } from "@/types/idea";
 
 interface FilterBarProps {
@@ -40,6 +42,22 @@ export default function FilterBar({
           onChange={(e) => update({ search: e.target.value })}
           className="flex-1 min-w-[200px] bg-surface border border-border rounded-lg px-4 py-2 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent-purple/50"
         />
+
+        {/* Audience */}
+        <select
+          value={filters.audience || "all"}
+          onChange={(e) =>
+            update({ audience: e.target.value as IdeaFilters["audience"] })
+          }
+          className={selectClass}
+        >
+          <option value="all">All Audiences</option>
+          {AUDIENCES.map((a) => (
+            <option key={a} value={a}>
+              {AUDIENCE_LABELS[a]}
+            </option>
+          ))}
+        </select>
 
         {/* Category */}
         <select
@@ -106,7 +124,7 @@ export default function FilterBar({
         Showing {filteredCount} of {totalCount} ideas
         {filters.search && (
           <button
-            onClick={() => update({ search: "", category: "all", difficulty: "all", duration: "all", source: "all" })}
+            onClick={() => update({ search: "", category: "all", difficulty: "all", duration: "all", audience: "all", source: "all" })}
             className="ml-2 text-accent-purple hover:underline"
           >
             Clear filters

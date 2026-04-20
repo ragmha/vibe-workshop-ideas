@@ -16,6 +16,7 @@ export default function IdeaCatalog({ ideas }: IdeaCatalogProps) {
     category: "all",
     difficulty: "all",
     duration: "all",
+    audience: "all",
     source: "all",
     search: "",
   });

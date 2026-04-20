@@ -6,6 +6,7 @@ export interface Idea {
   category: Category;
   difficulty: Difficulty;
   duration: Duration;
+  audience: Audience;
   tools: string[];
   tags: string[];
   source: "curated" | "ai";
@@ -19,20 +20,33 @@ export type Category =
   | "data"
   | "creative"
   | "mobile"
-  | "devtools";
+  | "devtools"
+  | "business"
+  | "education"
+  | "fun";
 
 export type Difficulty = "beginner" | "intermediate" | "advanced";
 
 export type Duration = "15min" | "30min" | "1hr" | "2hr+";
 
+export type Audience =
+  | "general"
+  | "kids"
+  | "students"
+  | "business"
+  | "engineers";
+
 export const CATEGORIES: Category[] = [
   "web",
+  "game",
+  "creative",
+  "business",
+  "education",
+  "fun",
+  "data",
+  "mobile",
   "api",
   "cli",
-  "game",
-  "data",
-  "creative",
-  "mobile",
   "devtools",
 ];
 
@@ -44,6 +58,14 @@ export const DIFFICULTIES: Difficulty[] = [
 
 export const DURATIONS: Duration[] = ["15min", "30min", "1hr", "2hr+"];
 
+export const AUDIENCES: Audience[] = [
+  "general",
+  "kids",
+  "students",
+  "business",
+  "engineers",
+];
+
 export const CATEGORY_LABELS: Record<Category, string> = {
   web: "🌐 Web",
   api: "🔌 API",
@@ -53,6 +75,9 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   creative: "🎨 Creative",
   mobile: "📱 Mobile",
   devtools: "🛠️ DevTools",
+  business: "💼 Business",
+  education: "📚 Education",
+  fun: "🎉 Fun",
 };
 
 export const DIFFICULTY_LABELS: Record<Difficulty, string> = {
@@ -66,4 +91,12 @@ export const DURATION_LABELS: Record<Duration, string> = {
   "30min": "⏱️ 30 min",
   "1hr": "🕐 1 hour",
   "2hr+": "🕑 2+ hours",
+};
+
+export const AUDIENCE_LABELS: Record<Audience, string> = {
+  general: "👥 General",
+  kids: "🧒 Kids",
+  students: "🎓 Students",
+  business: "💼 Business",
+  engineers: "👩‍💻 Engineers",
 };
